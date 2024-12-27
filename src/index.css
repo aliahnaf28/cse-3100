@@ -19,6 +19,7 @@ footer {
 
 .cat-card {
   border: 1px solid #ddd;
+ 
   text-align: center;
   height: 250px;
   display: flex;
@@ -29,4 +30,6 @@ footer {
 .cat-info {
   background: #f8f9fa;
   border-radius: 4px;
+  row-gap: 20px;
+  column-gap: 20px;
 }

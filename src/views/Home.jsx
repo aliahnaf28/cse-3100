@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
 const featuredCats = [
-  { name: 'Whiskers', age: '2' },
-  { name: 'Mittens', age: '2' },
-  { name: 'Shadow', age: '1' },
+  { name: 'Whiskers', age: '2',breed : 'Abyssinian' },
+  { name: 'Mittens', age: '2',breed : 'Peterbald' },
+  { name: 'Shadow', age: '1',breed : 'Siamese' },
 ];
 
 export default function Home() {
@@ -33,8 +33,7 @@ export default function Home() {
       <section className="text-center mt-4">
         <h2>Welcome to Purrfect Adoption</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luc
+        This web page is a direct feed from our adoption system. That means as soon as a new cat or kitten arrives and is processed, they immediately appear on this page! At times you may need to scroll to see all of the available cats. 
         </p>
       </section>
 
@@ -49,6 +48,7 @@ export default function Home() {
                 <div className="cat-info">
                   <h3 className="h5 mb-1">{cat.name}</h3>
                   <p className="mb-0">Age: {cat.age}</p>
+                  <p className="mb-0">Breed: {cat.breed}</p>
                 </div>
               </div>
             </div>
